@@ -1,0 +1,47 @@
+{
+  "name": "axios-keycloak",
+  "version": "0.0.0-semantic-release",
+  "description": "module axios-keycloak",
+  "main": "dist/axios-keycloak.js",
+  "umd:main": "dist/axios-keycloak.umd.js",
+  "module": "dist/axios-keycloak.m.js",
+  "source": "index.js",
+  "scripts": {
+    "build": "microbundle -o ./dist",
+    "commit": "git-cz",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "test": "jest --coverage",
+    "posttest": "npm run lint",
+    "precommit": "npm test",
+    "commitmsg": "validate-commit-msg",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "keywords": [],
+  "author": "René Herrmann <rene@herrmannplatz.de>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "keycloak-js": "^4.4.0"
+  },
+  "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^0.14.3",
+    "jest": "^21.2.1",
+    "microbundle": "^0.6.0",
+    "nock": "^9.6.1",
+    "semantic-release": "^8.2.0",
+    "standard": "^10.0.3",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/herrmannplatz/axios-keycloak.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
