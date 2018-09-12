@@ -17,7 +17,10 @@
     "commitmsg": "validate-commit-msg",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "keywords": [],
+  "keywords": [
+    "axios",
+    "keycloak"
+  ],
   "author": "René Herrmann <rene@herrmannplatz.de>",
   "license": "MIT",
   "dependencies": {
@@ -37,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com/herrmannplatz/axios-keycloak.git"
+    "url": "git+https://github.com/herrmannplatz/axios-keycloak.git"
   },
   "config": {
     "commitizen": {

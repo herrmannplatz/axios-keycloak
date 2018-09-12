@@ -1,6 +1,6 @@
 # axios-keycloak [![npm version](https://badge.fury.io/js/axios-keycloak.svg)](https://badge.fury.io/js/axios-keycloak) [![Build Status](https://travis-ci.org/herrmannplatz/axios-keycloak.svg?branch=master)](https://travis-ci.org/herrmannplatz/axios-keycloak)
 
-> Keycloak client with build in axios functionality letting you create axios instances for doing authenticated request. The module is dealing with the token refresh for you.
+> Keycloak client with build in axios functionality, letting you create axios instances for doing authenticated request. The module is dealing with the token refresh for you.
 
 ## Usage
 
@@ -21,7 +21,7 @@ kc.init({ onLoad: 'login-required' })
     // ...
   }
 
-// In case you wanna do an unauthenticated request
+// In case you want do an unauthenticated request
 const axios = AxiosKeyloak.axios
 
 ```
