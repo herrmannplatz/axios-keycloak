@@ -11,7 +11,7 @@ describe('axiosKeycloak', () => {
     expect(AxiosKeycloak.axios).toBeDefined()
   })
 
-  it('should add authorization header when sending requests send', async () => {
+  it('should add authorization header when sending requests', async () => {
     const HOST = 'http://localhost:5000'
     const ENDPOINT = '/users/1234'
     const TOKEN = 'token'
