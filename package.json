@@ -11,6 +11,7 @@
     "commit": "git-cz",
     "lint": "standard",
     "lint:fix": "standard --fix",
+    "pretest": "npm run build",
     "test": "jest --coverage",
     "posttest": "npm run lint",
     "precommit": "npm test",

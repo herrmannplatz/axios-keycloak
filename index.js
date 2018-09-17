@@ -1,7 +1,7 @@
-const axios = require('axios')
-const Keycloak = require('keycloak-js')
+import axios from 'axios'
+import Keycloak from 'keycloak-js'
 
-module.exports = class AxiosKeycloak extends Keycloak {
+export default class AxiosKeycloak extends Keycloak {
   createAxiosInstance (config) {
     const instance = axios.create(config)
 

@@ -1,5 +1,5 @@
 /* eslint-env jest */
-const AxiosKeycloak = require('./')
+const AxiosKeycloak = require('./dist/axios-keycloak')
 const nock = require('nock')
 const httpAdapter = require('axios/lib/adapters/http')
 
