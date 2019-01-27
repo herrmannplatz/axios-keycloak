@@ -25,8 +25,8 @@
   "author": "René Herrmann <rene@herrmannplatz.de>",
   "license": "MIT",
   "dependencies": {
-    "axios": "0.18.0",
-    "keycloak-js": "4.4.0"
+    "axios": "^0.18.0",
+    "keycloak-js": "^4.8.3"
   },
   "devDependencies": {
     "commitizen": "^2.9.6",
