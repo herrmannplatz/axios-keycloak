@@ -24,7 +24,7 @@ describe('axiosKeycloak', () => {
 
     const axiosInstance = axiosKeycloak.createAxiosInstance({ baseURL: HOST })
 
-    axiosKeycloak.updateToken = () => Promise.resolve(false)
+    axiosKeycloak.updateToken = () => ({ success: cb => cb(), error: cb => cb() })
     axiosKeycloak.token = TOKEN
 
     nock(HOST)

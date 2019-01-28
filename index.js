@@ -5,14 +5,14 @@ export default class AxiosKeycloak extends Keycloak {
   createAxiosInstance (config) {
     const instance = axios.create(config)
 
-    instance.interceptors.request.use(config => this.updateToken(5)
-      .then(() => {
+    instance.interceptors.request.use(config => new Promise((resolve, reject) => this.updateToken(5)
+      .success(() => {
         config.headers.Authorization = 'Bearer ' + this.token
-        return Promise.resolve(config)
+        resolve(config)
       })
-      .catch(() => {
+      .error(() => {
         this.login()
-      }))
+      })))
 
     return instance
   }
