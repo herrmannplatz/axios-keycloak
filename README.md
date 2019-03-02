@@ -5,11 +5,11 @@
 ## Usage
 
 ```javascript
-import AxiosKeyloak from 'axios-keyloak'
+import AxiosKeycloak from 'axios-keycloak'
 
 ...
 
-const kc = new AxiosKeyloak()
+const kc = new AxiosKeycloak()
 const axiosInstance = kc.createAxiosInstance()
 
 kc.init({ onLoad: 'login-required' })
@@ -22,6 +22,6 @@ kc.init({ onLoad: 'login-required' })
   }
 
 // In case you want do an unauthenticated request
-const axios = AxiosKeyloak.axios
+const axios = AxiosKeycloak.axios
 
 ```
