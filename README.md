@@ -15,7 +15,7 @@ const axiosInstance = kc.createAxiosInstance()
 kc.init({ onLoad: 'login-required' })
   .then(() => {
     // authenticated request using keycloak access token
-    return axiosInstance.get('/user/12345'))
+    return axiosInstance.get('/user/12345')
   })
   .then((response) => {
     // ...
