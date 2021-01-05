@@ -35,7 +35,7 @@
     "jest": "^21.2.1",
     "microbundle": "^0.9.0",
     "nock": "^9.6.1",
-    "semantic-release": "^8.2.0",
+    "semantic-release": "^17.2.3",
     "standard": "^10.0.3",
     "validate-commit-msg": "^2.14.0"
   },
